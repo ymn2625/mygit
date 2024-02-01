@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- 
+	1. 주석: 학습정리, 메모, 코드설명
+		단축키 : ctrl+shift+/
+	2. 태그와 요소
+		(			요소   : element			)
+		시작태그        						종료태그
+		<h1 속성명="" 속성명=""> innerHTML	</h1>
+		- 따옴표 두개도 쓸 수 있음 "          '    '            "
+	3. 코드정리 - ctrl+shift+f
+	4. placeholder
+		- https://via.placeholder.com/width x height - 픽셀의 사이즈를 볼 수 있음
+	5. Lorem ipsum : http://lipsum.com - 글자들을 가져다가 쓸 수 있음
+	6. color picker - 색상찍으면 나오는 것
+	
+	7. html문서의 구조
+	
+								html
+								 |
+					----------------------------
+					|			 				|
+				  head						   body
+				    |							|
+			-------------------				   div
+			|     |     |     |	                |
+										-----------------
+										|       |       |
+ 										p		p		p
+ 										|		|		|	
+ 									   span
+ 			1)head
+ 				. meta : 웹 페이지에 대한 추가정보, 문자코드, 문서의 개요, 키워드, 브라우저에 나타나지 않는 문서정보
+ 				. title : 문서의 제목(웹 페이지의 제목)란에 뜸
+ 				. script : 웹페이지에 자바스크립트 추가할때
+ 				. link : 외부 문서파일을 추가
+ 				. style : css 추가
+ 			2)body
+ 				. <h1> ~ <h6> : 제목태그, 문서의 구조를 잡을 때 주로 씀(h1이 가장 큼) 보통은 1~3까지를 주로 씀
+ 				. 본문태그
+ 					- p태그 : 단락을 만들 때 사용
+ 					- br태그 : 줄 바꿈
+ 					- hr태그 : 수평줄
+ 					- a태그(anchor) : 앵커태그, 문서의 이동을 위해 사용
+ 									. 지정한 사이트로 이동
+ 										<a href="http://www.naver.com>네이버</a>
+ 									. 지정한 페이지로 이동
+ 									. 페이지 내에서 특정 부분으로 이동
+ 										<a href="#a">이동</a>            <h1 id="a"></h1>(이동을 누르면 a를 찾아서 이동함)
+ 				. 글자형태
+ 					- b : 굵은글자
+ 					- i : 기울어진 글자
+ 					- small : 작은글자 - 사이트 밑에 주소나 전화번호 줄때 많이 사용
+ 					- sup : 윗첨자
+ 					- sub : 아랫첨자
+ 					- del : 가운데 삭선(찍 그어져있는 것)
+ 				
+ 				. 이미지
+ 					- img : 이미지를 추가할 때   <img src="절대경로 or 상대경로">  -종료태그 없음, src는 소스코드, 소스에 경로 넣어주면 끝
+ 						../ 한 칸 위에
+ 						./ 바로 밑에(상대주소)
+ 				
+ 				. 목록
+ 					- ul : 순서가 없는 목록(unordered)
+ 					- ol : 순서가 있는 목록(ordered)
+ 					- li : 목록요소
+ 					<ul> or <ol>목록시작
+ 					<li>소개</li>
+ 					<li>내용</li>
+ 					<li>마침</li> 										
+ 					</ul> or <ol>목록끝
+ 				
+ 				.테이블
+ 					- table : 테이블 영역지정
+ 					- tr : row를 만들어줌
+ 					- td : column을 만들어줌
+ 					- thead, tbody, tfoot -> 이거 안에 tr, td를 넣고 써라 -> 정보 인식을 위해서
+ 				
+ 				.영역태그
+ 					- div, span : 영역설정해서 이것저것 설정
+ 				
+ 				.시멘틱태그 : 검색을 위해서 만들어진 태그 -> 검색을 위해서 이걸 반드시 써야함
+ 					- header, footer, section, article, aside
+ 
+ -->	
+<html lang="ko">
+<!-- 시각장애인들에게 읽어줄때 ko로 해야 숫자같은거 한글로 읽어줌 -->
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="홍길동">
+<meta name="description" content="내가 만든 웹 페이지 입니다">
+<meta name="keyword" content="짜장면, 짬뽕">
+
+<base href="https://www.chosun.com">
+<link hrep=""><!-- css를 바깥에서 만들어서 가져오거나 JSP를 가져올때 -->
+<!-- 태그안에 뭐를 넣는것을 속성이라고 한다(href:하이퍼링크 속성 -->
+<!-- base는 url의 반복을 할 때 반복되는 앞부분을 넣고 본문에 a 태그 후 뒷부분 다른 구문을 넣어준다. -->
+<title>내가 만든 웹페이지</title>
+</head>
+<body>
+	<h1>내가 만든 웹 페이지</h1>
+	<hr>
+	<a href="economy">경제뉴스</a>
+	<!-- 하이퍼링크를 이용할때 앵커태그를 사용함<a> -->
+	<a href="national">사회<b>뉴스</b></a>
+	<img src="https://via.placeholder.com/200 x 300">
+</body>
+</html>
